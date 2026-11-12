@@ -1,8 +1,7 @@
 name: Maven Test, Build and Docker Push # this is santhu file
 
 on:
-  push:
-    branches: ["main"]
+  workflow_dispatch:
 
 jobs:
   build-and-test:

@@ -1,5 +1,5 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jre
 WORKDIR /app
 COPY target/simplybyte-springboot-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 8090
-ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
